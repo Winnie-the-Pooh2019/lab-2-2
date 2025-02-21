@@ -4,8 +4,4 @@ project(lab_2_2)
 set(CMAKE_CXX_STANDARD 20)
 
 add_executable(lab_2_2 main.cpp Time.h Time.cpp
-        bell.h
-        bell.cpp
-        separator.h
-        separator.cpp
 )
