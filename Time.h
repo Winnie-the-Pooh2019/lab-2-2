@@ -14,16 +14,9 @@ public:
     Time(int s): Time(0, 0, s){
     }
 
-    int getTotalSeconds() const {
-        return totalSeconds;
-    }
+    int getTotalSeconds() const;
 
-    void setTotalSeconds(int seconds) {
-        if (totalSeconds >= 0)
-            totalSeconds = seconds;
-        else
-            std::cout << "Total seconds cannot be negative" << std::endl;
-    }
+    void setTotalSeconds(int seconds);
 
     bool addSeconds(int seconds) {
         if (totalSeconds + seconds >= 0)

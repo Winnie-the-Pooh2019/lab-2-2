@@ -31,11 +31,17 @@ int Time::getMinutes() const {
 int Time::getSeconds() const {
     return totalSeconds % 60;
 }
-//
-// void Time::AddSeconds(int s){
-//     totalSeconds += s;
-//     Normalize();
-// }
+
+void Time::setTotalSeconds(int seconds) {
+    if (seconds >= 0)
+        totalSeconds = seconds;
+    else
+        std::cout << "Total seconds cannot be negative" << std::endl;
+}
+
+int Time::getTotalSeconds() const  {
+    return totalSeconds;
+}
 
 void Time::print(){
      std::cout << getHours() << " : " << getMinutes() << " : " << getSeconds() << std::endl;
