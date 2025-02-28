@@ -3,6 +3,7 @@
 //
 #include <iostream>
 #include <sstream>
+#include <iomanip>
 
 #include "table.h"
 
@@ -54,9 +55,10 @@ string Table::to_string() {
     stringstream ss;
 
     ss << "Table:" << endl;
+
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
-            ss << this->data[i][j] << " ";
+            ss << setw(5) << this->data[i][j] << " ";
         }
 
         ss << endl;
