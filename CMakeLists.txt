@@ -8,4 +8,6 @@ add_executable(lab_2_2 main.cpp Time.h Time.cpp
         bell.cpp
         separator.h
         separator.cpp
+        table.h
+        table.cpp
 )

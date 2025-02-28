@@ -2,24 +2,17 @@
 
 #include "bell.h"
 #include "separator.h"
+#include "table.h"
 
 using namespace std;
 
 int main()
 {
-    OddEvenSeparator separator;
+    Table* table = new Table(5, 5);
 
-    separator.add_number(12);
-    separator.add_number(13);
-    separator.add_number(14);
-    separator.add_number(15);
-    separator.add_number(16);
-    separator.add_number(17);
-    separator.add_number(18);
-    separator.add_number(19);
+    table->print();
 
-    separator.even();
-    separator.odd();
+    delete table;
 
     return 0;
 }
